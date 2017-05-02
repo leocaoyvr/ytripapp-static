@@ -1,0 +1,184 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Ytrip袋你游 | Details</title>
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+<!-- favicons -->
+<link rel="apple-touch-icon" sizes="76x76" href="img/icn-ytrip-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icn-ytrip-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icn-ytrip-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icn-ytrip-180x180.png">
+<link rel="apple-touch-icon" sizes="192x129" href="img/icn-ytrip-192x192.png">
+<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="img/icn-ytrip-76x76.png">
+
+<!-- assets -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+<!-- fancy box -->
+<link rel="stylesheet" href="css/fancybox.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/parts.css">
+<link rel="stylesheet" href="css/payment.css">
+<link rel="stylesheet" href="css/atom.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+    <div class="body-container w100p box-c"><!-- .body-container begin -->
+        <div class="content"><!-- content begin -->
+
+            <div class="header pos-r clearfix"><!-- .header begin -->
+                <div class="nav-bar"><!-- .nav-bar begin -->
+                    <a href="index.html">
+                        <img class="fl-l logo" src="img/logo-ytrip-red-284x64.png" alt="Ytrip logo" width="142" height="32">
+                    </a>
+                    <div class="container">
+                        <ul class="nav-menu fl-r"><!-- .nav-menu begin -->
+                            <li><a id="btn-new-trip" class="btn btn-small btn-red-frame">发起活动</a></li>
+                            <li><a href>帮助</a></li>
+                            <li class="pos-r">
+                                <a class="usr-info">
+                                    <span class="usr-name">Lisa</span>
+                                    <img class="usr-pic toggle-hover" src="pic/ppl-girl-1-56x56.png" alt="" width="28" height="28"/>
+                                </a>
+                                <div class="popup-wrapper" style="display: none;"></div>
+                                <div class="usr-menu box-arrow-top toggle-content hide"><!-- .usr-menu begin -->
+                                    <ul class="clearfix">
+                                        <li><a href="http://tmp.ilite.me"><i class="fz14em ion ion-ios-person"></i> 个人信息</a></li>
+                                        <li><a href="dashboard.html"><i class="fz14em ion ion-ios-gear"></i> 管理中心</a></li>
+                                        <li><a href=""><i class="fz14em ion ion-ios-flag"></i> 我的旅行</a></li>
+                                        <li><a href="" class="no-border"><i class="fz14em ion ion-ios-unlocked"></i> 登出</a></li>
+                                    </ul>
+                                </div><!-- .usr-menu end -->
+                            </li>
+                        </ul><!-- .nav-menu end -->
+                    </div>
+                </div><!-- .nav-bar end -->
+            </div><!-- .header end -->
+
+            <div class="main w960 box-c clearfix"><!-- main begin -->
+                <div class="card item-info fl-r"><!-- .item-info begin -->
+                    <div class="item-pic w310"><!-- .item-pic begin -->
+                        <div class="container">
+                            <img src="pic/ppl-girl-7-56x56.png" alt="" class="usr-portrait" width="56" height="56">
+                            <p class="cGrey h4">Lisa袋你吃全温哥华最好吃的坚果</p>
+                        </div>
+                        <img class="pic-small" src="pic/pic-activity-1-310x360.png" width="310" height="360">
+                        <img class="pic-large" src="pic/pic-activity-3-635x360.jpg" width="635" height="360" >
+                    </div><!-- .item-pic end -->
+                    <div class="clearfix"></div>
+
+                    <div class="item-brief"><!-- .item-brief begin -->
+                        <table class="tbl w-auto">
+                            <tbody>
+                                <tr>
+                                    <td>活动日期：</td>
+                                    <td>2015-10-07</td>
+                                </tr>
+                                <tr>
+                                    <td>活动时间：</td>
+                                    <td>10:00</td>
+                                </tr>
+                                <tr>
+                                    <td>报名人数：</td>
+                                    <td>7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="gutter-h">
+                        <h3>总计：<span class="cRed">$ 998</span></h3>
+                        <hr class="gutter-h">
+                        <p class="small-text">所有价格以加元结算，所有价格以加元结算，所有价格以加元结算。</p>
+                    </div><!-- .item-brief end -->
+                </div><!-- .item-info end -->
+
+                <div class="card payment-info w635 fl-l mb40"><!-- .payment-info begin -->
+                    <h3>支付信息</h3>
+                    <hr class="gutter-h">
+                    <div class="container holder"><!-- .hoder begin -->
+                        <img src="img/logo-paypal-258x66.png" width="258" height="66" alt="paypal logo">
+                        <br><br>
+                        <a class="btn btn-green btn-large toggle-holder">用 Paypal 支付</a>
+                        <p class="small-text mt10 cSilver"><i class="ion-ios-locked fz12em"></i> 连接已加密</p>
+                    </div><!-- .hoder end -->
+
+                    <div class="form-paypal holder-content" style="display: none;"><!-- .form-paypal begin -->
+                        {paypal content}
+                    </div><!-- .form-paypal end -->
+                </div><!-- .payment-info end -->
+
+                <div class="card payment-info w635 fl-l mb40"><!-- .payment-info begin -->
+                    <h3>验证手机</h3>
+                    <hr class="gutter-h">
+                    <div class="container ml15">
+                        <table class="tbl form">
+                            <tbody>
+                                <tr>
+                                    <th>国家</th>
+                                    <td width="300">
+                                        <div class="select">
+                                            <select class="input">
+                                                <option value="">中国</option>
+                                                <option value="">加拿大</option>
+                                                <option value="">美国</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>号码</th>
+                                    <td class="pos-r">
+                                        <span class="msg-error"><i class="ion-android-alert fz12em"></i> 这是错误信息</span>
+                                        <input type="text" class="input" value="+86 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>验证码</th>
+                                    <td class="pos-r">
+                                        <span class="msg-error"><i class="ion-android-alert fz12em"></i> 这是错误信息</span>
+                                        <input type="text" class="input secure">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td><button class="btn btn-large btn-green mt10">继续支付</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- .payment-info end -->
+
+            </div><!-- main end -->
+
+
+
+
+
+            <div class="footer mt60"><!-- .footer begin -->
+                <div class="footer-info w960 box-c"><!-- .footer-info begin -->
+                    <img class="pos-a logo" src="img/logo-ytrip-grey-142x32.png" alt="Ytrip logo" width="142" height="32">
+                    <ul class="text-c">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">用户协议</a></li>
+                    </ul>
+                    <p class="text-c small-text cLightGrey">Copyright © 2015 Ytrip - Yidai Media Corporation. All rights reserved.</p>
+                </div><!-- .footer-info end -->
+            </div>
+        </div><!-- main end -->
+    </div><!-- container end -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>

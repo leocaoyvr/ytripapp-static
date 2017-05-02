@@ -1,0 +1,201 @@
+/*
+/* Index
+/* ========================= */
+
+
+/* Header
+/* ------------------------- */
+
+
+/* nav menu*/
+
+.nav-bar {
+    background: none;
+    box-shadow: none;
+}
+
+.nav-bar .container {
+    margin: 25px 5% 0 40px;
+}
+
+.nav-menu>li>a {
+    color: #fff;
+}
+
+/* hero */
+.hero-text {
+    width: 100%;
+    margin-top: 210px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.hero img {
+    position: relative;
+    z-index: -1;
+}
+
+/* search bar */
+.search-bar {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.search-bar .wrapper {
+    border-radius: 2px;
+    background-color: #fff;
+    color: #a7aeb4;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+}
+
+.search-bar .search-inputs {
+    width: 100%;
+    max-width: 620px;
+}
+
+.search-bar .search-loca,
+.search-bar .search-date,
+.search-bar .search-ppl {
+    font-size: 16px;
+    float: left;
+    padding: 0 15px;
+    height: 40px;
+    border: none;
+    border-right: 1px solid #dcdce1;
+}
+
+.search-bar .search-loca {
+    width: 56%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.search-bar .search-date { width: 22%; }
+
+.search-bar .search-ppl { width: 22%; }
+
+.search-bar .btn {
+    min-width: 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 40px;
+}
+
+
+/* main
+/* ------------------------- */
+
+/* featured events */
+
+.events {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .03);
+}
+
+
+
+/* Cards
+/* ------------------------- */
+
+.card {
+    width: 310px;
+    height: 360px;
+    position: relative;
+    float: left;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+
+.card .bg-pic {
+    position: absolute;
+}
+
+.card .card-content {
+    width: 100%;
+    position: absolute;
+}
+
+.cities .card-content {
+    top: 50%;
+    margin-top: -61px;
+    padding: 0 10px;
+}
+
+.trips .card { margin-bottom: 15px; }
+
+.trips .card-content {
+    bottom: 0;
+}
+
+.trips .card-content p {
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.trips .card .usr-portrait {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .9);
+    bottom: -22px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/* Responsive
+/* ------------------------- */
+
+@media only screen and (min-width: 1366px) {
+    /* desktop */
+    .hero-text { margin-top: 15%; }
+    .hero img { width: 100%; height: auto; }
+}
+
+@media only screen and (max-width: 1366px) {
+    /* laptop */
+    .hero img {
+        left: 50%;
+        margin-left: -683px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    /* phone */
+    .hero-text h1 { font-size: 3em; }
+
+    .search-bar .wrapper { width: 605px; }
+
+    .search-bar .search-inputs { width: 505px; }
+
+    .cities .card {
+        width: 201px;
+        overflow: hidden;
+    }
+
+    .trips .card-block {
+        width: 635px;
+    }
+
+    .trips .w310 a:first-child .card {
+        margin-right: 15px;
+    }
+
+}

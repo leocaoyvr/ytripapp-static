@@ -1,0 +1,130 @@
+/*
+/* Details
+/* ========================= */
+
+
+/* Header
+/* ------------------------- */
+
+
+/* Main
+/* ------------------------- */
+
+/* banner */
+.banner {
+    position: relative;
+    margin: 40px 0;
+}
+
+.banner .usr-portrait {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .9);
+}
+
+.host-info {
+    position: absolute;
+    z-index: 1;
+}
+
+.host-info .container {
+    float: left;
+    padding-top: 25px;
+    margin-left: 15px;
+}
+
+.banner .card {
+    margin-top: 100px;
+}
+
+.trip-picker {
+    padding: 0 20px;
+    width: 325px;
+    position: relative;
+    margin-top: -60px;
+    background-color: #fff;
+}
+
+.trip-picker .price {
+    line-height: 60px;
+    border-bottom: 1px solid #dcdce1;
+}
+
+/* trip desc */
+
+.trip-desc {
+    padding: 5px 30px 30px 30px;
+}
+
+.trip-desc h3 {
+    margin-top: 25px;
+}
+
+.trip-desc P {
+    margin-bottom: 12px;
+}
+
+/* trip pictures*/
+
+.trip-pic h4 {
+    margin: 20px 10px 7px 10px;
+}
+
+.trip-pic .fancybox {
+    width: 153px;
+    float: left;
+    margin-top: 4px;
+    opacity: .92;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .03);
+}
+
+.trip-pic .fancybox:hover { opacity: .82; }
+
+.trip-pic .fancybox:nth-of-type(2n+1) {
+    margin-right: 4px;
+}
+
+
+/* Reponsive
+/* ------------------------- */
+
+@media only screen and (min-width: 1366px) {
+    /* desktop */
+}
+
+@media only screen and (max-width: 1366px) {
+    /* laptop */
+
+}
+
+@media only screen and (max-width: 960px) {
+    /* phone */
+    .trip-picker {
+        width: 100%;
+        margin-top: 0;
+        padding: 10px 30px 30px 30px;
+    }
+
+    .trip-pic {
+        width: 100%!important;
+    }
+
+    .trip-pic .container {
+        text-align: center;
+    }
+
+    .trip-pic .fancybox { margin-right: 4px!important; }
+
+    .trip-pic .fancybox:nth-of-type(4n + 4) { margin-right: 0!important; }
+
+    .trip-pic .fancybox,
+    .trip-pic .fancybox img {
+        width: 155px;
+        overflow: hidden;;
+    }
+
+
+
+}

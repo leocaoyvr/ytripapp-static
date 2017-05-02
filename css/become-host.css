@@ -1,0 +1,109 @@
+/*
+/* Index
+/* ========================= */
+
+
+body { background-color: #fff; }
+
+
+/* Hero
+/* ------------------------- */
+
+.hero-text {
+    width: 100%;
+    margin-top: 220px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.hero img {
+    position: relative;
+    z-index: -1;
+}
+
+
+/* Host application form
+/* ------------------------- */
+
+.form-host {
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+}
+
+.form-host th {
+    text-align: right;
+    padding: 13px 10px;
+}
+
+.form-host td {
+    padding-left: 10px;
+}
+
+.form-host + button { margin-top: 10px; }
+
+/* User Show
+/* ------------------------- */
+
+.usr-show .container {
+    text-align: center;
+    float: left;
+    margin-right: 12px;
+    width: 231px;
+}
+
+.usr-show img {
+    width: 231px;
+    border-radius: 4px;
+}
+
+.usr-show .container h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.usr-show .container h3,
+.usr-show .container p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* Responsive
+/* ------------------------- */
+
+@media only screen and (min-width: 1366px) {
+    /* desktop */
+    .hero-text { margin-top: 16%; }
+    .hero img { width: 100%; height: auto; }
+}
+
+@media only screen and (max-width: 1366px) {
+    /* laptop */
+    .hero img {
+        left: 50%;
+        margin-left: -683px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    /* phone */
+
+    .hero-text h1 { font-size: 3em; }
+
+    .main .form-host + button { display: inline-block; }
+
+    .usr-show .container:last-of-type { display: none; }
+
+
+    .usr-show .container {
+        width: 205px;
+        margin-right: 10px;
+    }
+
+    .usr-show .container:nth-of-type(3) { margin-right: 0; }
+
+    .usr-show img { width: 205px; }
+
+}

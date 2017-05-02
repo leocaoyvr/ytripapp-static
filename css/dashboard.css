@@ -1,0 +1,310 @@
+/*
+/* Main Style
+/* ========================= */
+
+
+
+/* Header
+/* ------------------------- */
+
+
+/* nav bar */
+
+
+
+.nav-bar .logo {
+    padding: 14px 49px;
+    background-color: #ff6363;
+}
+
+.nav-bar .container {
+    margin-top: 14px;
+}
+
+
+
+
+
+
+/* Sider
+/* ------------------------- */
+
+.sider {
+    float: left;
+    width: 240px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, .03);
+    min-height: 500px;
+}
+
+.sider .usr-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 7px 0;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+/* side menu */
+.side-menu {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+.side-menu a {
+    color: #616569;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    border-left: 2px solid #2d2d2d;
+    padding-left: 20px;
+}
+
+.side-menu a .ion { margin-right: 12px; }
+
+.side-menu a.active,
+.side-menu a:hover {
+    color: #ffffff;
+    border-left-color: #ff6363;
+    background-color: #494954;
+}
+
+
+/* Main
+/* ------------------------- */
+
+.main {
+    min-height: 450px;
+    padding-top: 40px;
+    margin-left: 240px;
+    padding-bottom: 60px;
+    background-color: #f5f5f5;
+}
+
+/* form - u er profile */
+.main .form {
+    min-width: 720px;
+    max-width: 1080px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .03);
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.main .tbl {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.main .tbl-list th,
+.main .tbl-list td { height: 52px; }
+
+/* form - user profile */
+/* form - create new trip */
+
+#form-usr-profile .usr-pic {
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+}
+
+#form-usr-profile .usr-pic-mask { opacity: .3; }
+
+#form-usr-profile th,
+#form-new-trip th {
+    text-align: right;
+    padding: 13px 10px;
+}
+
+#form-usr-profile td:nth-child(2),
+#form-new-trip td:nth-child(2) {
+    padding: 0 10px;
+}
+
+#form-new-trip .step-upload-img img {
+    border-radius: 4px;
+}
+
+.step-upload-img .trip-pic {
+    margin-right: 10px;
+    width: 120px;
+}
+
+
+
+
+
+
+/* form - trip list */
+/* form - order management */
+
+#form-trip-list td,
+#form-order-mgr td {
+    line-height: 28px;
+}
+
+#form-trip-list td img,
+#form-order-mgr td img {
+    float: left;
+    margin-right: 7px;
+}
+
+#form-trip-list td .container,
+#form-order-mgr td .container {
+    width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+/* form - wish list */
+
+#form-wish-list .trip-info {
+    width: 180px;
+    padding-left: 20px;
+}
+
+.tbl-trip-list .trip-pic {
+    float: right;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.tbl-trip-list .trip-info {
+    position: relative;
+    vertical-align: top;
+    padding: 10px 0 0 10px;
+    width: 260px;
+}
+
+.tbl-trip-list .trip-actions {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* form - new trip */
+
+#form-new-trip .upload-img-large .container {
+    position: relative;
+    width: 435px;
+    height: 247px;
+    z-index: 0;
+}
+
+#form-new-trip .upload-img-small .container {
+    float: left;
+    position: relative;
+    z-index: 0;
+    width: 120px;
+    height: 139px;
+    margin-right: 10px;
+}
+
+#form-new-trip .help-info {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #a7aeb4;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#form-new-trip .help-info:hover {
+    opacity: .9;
+}
+
+#form-new-trip .upload-img-large {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#form-new-trip .upload-img-small {
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#form-new-trip .upload-img-large .help-info {
+    width: 435px;
+    height: 247px;
+    padding-top: 78px;
+}
+
+#form-new-trip .upload-img-small .help-info {
+    width: 120px;
+    height: 139px;
+    padding-top: 32px;
+}
+
+#form-new-trip .upload-img-mid .help-info {
+    width: 180px;
+    height: 209px;
+    padding-top: 68px;
+}
+
+#form-new-trip .upload-img-large i { font-size: 64px; }
+
+#form-new-trip .upload-img-mid i { font-size: 48px; }
+
+#form-new-trip .upload-img-small i { font-size: 32px; }
+
+
+/* Parts
+/* ------------------------- */
+
+.trip-actions span {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Misc
+/* ------------------------- */
+
+.main img:hover { opacity: .92; }
+
+
+
+
+
+
+
+
+/* Responsive
+/* ------------------------- */
+
+@media only screen and (min-width: 1366px) {
+    /* desktop */
+    .main .form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* pad */
+    .main .form {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    /* phone */
+}
+

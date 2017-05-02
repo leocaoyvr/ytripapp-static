@@ -1,0 +1,726 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Ytrip袋你游</title>
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+<!-- favicons -->
+<link rel="apple-touch-icon" sizes="76x76" href="img/icn-ytrip-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icn-ytrip-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icn-ytrip-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icn-ytrip-180x180.png">
+<link rel="apple-touch-icon" sizes="192x129" href="img/icn-ytrip-192x192.png">
+<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="img/icn-ytrip-76x76.png">
+
+<!-- assets -->
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" href="css/parts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/atom.css">
+
+</head>
+
+<body class="bgcBlack">
+    <div class="body-container w100p box-c"><!-- .body-container begin -->
+        <div class="content"><!-- content begin -->
+            <div class="header pos-r clearfix"><!-- .header begin -->
+                <div class="nav-bar"><!-- .nav-bar begin -->
+                    <a href="">
+                        <img class="fl-l logo" src="img/logo-ytrip-white-142x32.png" alt="Ytrip logo" width="142" height="32">
+                    </a>
+                    <div class="container">
+                        <ul class="nav-menu fl-r"><!-- .nav-menu begin -->
+                            <li><a id="btn-new-trip" class="btn btn-small btn-red-frame">发起活动</a></li>
+                            <li><a href>帮助</a></li>
+                            <li class="pos-r">
+                                <a class="usr-info">
+                                    <span class="usr-name">Lisa</span>
+                                    <img class="usr-pic toggle-hover" src="pic/ppl-girl-1-56x56.png" alt="" width="28" height="28"/>
+                                </a>
+                                <div class="popup-wrapper" style="display: none;"></div>
+                                <div class="usr-menu box-arrow-top toggle-content hide"><!-- .usr-menu begin -->
+                                    <ul class="clearfix">
+                                        <li><a href="http://tmp.ilite.me"><i class="fz14em ion ion-ios-person"></i> 个人信息</a></li>
+                                        <li><a href=""><i class="fz14em ion ion-ios-gear"></i> 管理中心</a></li>
+                                        <li><a href=""><i class="fz14em ion ion-ios-flag"></i> 我的旅行</a></li>
+                                        <li><a href="" class="no-border"><i class="fz14em ion ion-ios-unlocked"></i> 登出</a></li>
+                                    </ul>
+                                </div><!-- .usr-menu end -->
+                            </li>
+                        </ul><!-- .nav-menu end -->
+                    </div>
+                </div><!-- .nav-bar end -->
+            </div><!-- .header end -->
+
+            <div class="sider"><!-- .sider begin -->
+                <div class="usr-info ov-hide text-c pos-r"><!-- .usr-info begin -->
+                    <img class="usr-pic" src="pic/pic-usr-1-300x300.png" width="240">
+                    <p class="usr-name h4 cGray">方雨燕</p>
+                </div><!-- .usr-info end -->
+
+                <div class="side-menu"><!-- .side-menu begin -->
+                    <ul class="nav-tab">
+                        <li><a href="#form-usr-profile"><i class="fz14em ion ion-ios-person"></i>个人资料</a></li>
+                        <li><a href="#form-trip-list"><i class="fz14em ion ion-clipboard"></i>行程单</a></li>
+                        <li><a href="#form-wish-list"><i class="fz14em ion ion-heart"></i>心愿单</a></li>
+                        <li><a href="#form-trip-mgr"><i class="fz14em ion ion-ios-flag"></i>旅程管理</a></li>
+                        <li><a href="#form-order-mgr"><i class="fz14em ion ion-bookmark"></i>预约管理</a></li>
+                        <li class="hide"><a href="#form-new-trip"><i class="fz14em ion ion-speakerphone"></i>发起活动</a></li>
+                    </ul>
+                </div><!-- .side-menu end -->
+            </div><!-- .sider end -->
+
+            <div class="main"><!-- main begin -->
+                <div id="form-usr-profile" class="form tab-content"><!-- .form-usr-profile begin -->
+                    <h3>个人资料</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl">
+                        <tbody>
+                            <tr>
+                                <td class="pos-r">
+                                   <img class="usr-pic" src="pic/pic-usr-1-300x300.png" alt="" width="120">
+                                   <img class="usr-pic-mask ml-auto" src="pic/pic-usr-1-300x300.png" alt="" width="120">
+                                </td>
+                                <td>
+                                    <p>
+                                        照片尺寸最少300x300像素，格式 png. gif, jpg。<br>
+                                        请上传一张能够现实清晰正脸的照片。
+                                    </p>
+                                    <a href="" class="btn btn-small btn-grey-frame mt15">上传照片</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>用户名</th>
+                                <td><input class="input" type="text" value="Lisa"></td>
+                            </tr>
+                            <tr>
+                                <th>邮件</th>
+                                <td><input class="input" type="text" value="lisa.yuyi@gmail.com"></td>
+                            </tr>
+                            <tr>
+                                <th>姓</th>
+                                <td><input class="input" type="text" value="方"></td>
+                            </tr>
+                            <tr>
+                                <th>名</th>
+                                <td><input class="input" type="text" value="雨燕"></td>
+                            </tr>
+                            <tr>
+                                <th>性别</th>
+                                <td>
+                                    <div class="select">
+                                        <select class="input w-auto">
+                                            <option value="" selected="selected">选择</option>
+                                            <option value="Male">男</option>
+                                            <option value="Female">女</option>
+                                            <option value="Other">其他</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="va-t">个人简介</th>
+                                <td><textarea class="input" rows="5">此人很懒，没有留下简介。</textarea></td>
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <td><button class="btn btn-red btn-small">更新</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- .form-usr-profile end -->
+
+                <div id="form-trip-list" class="form tab-content"><!-- .form-trip-list begin -->
+                    <h3>行程单</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl tbl-list">
+                        <tbody>
+                            <tr>
+                                <th width="120">host</th>
+                                <th>活动时间</th>
+                                <th>活动地点</th>
+                                <th width="80">状态</th>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                            <tr>
+                                <td><div class="container"><img src="pic/ppl-girl-1-56x56.png" width="28" height="28"><span class="usr-name">董好马</span></div></td>
+                                <td>2015年10月1日 上午10点10分</td>
+                                <td>方圆袋你玩UBC</td>
+                                <td>待定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- .form-trip-list end -->
+
+                <div id="form-wish-list" class="form tab-content"><!-- .form-wish-list begin -->
+                    <h3>心愿单</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl tbl-trip-list">
+                        <tbody>
+                            <tr><!-- row 1 begin -->
+                                <td class="text-c">
+                                    <img class="mb5" src="pic/ppl-girl-2-56x56.png">
+                                    <p>方雨燕</p>
+                                </td>
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">青青带你吃法国大厨的私房菜</p>
+                                        <p class="cGreen h4 mb5">$ 998</p>
+                                    </a>
+                                    <p class="trip-actions">
+                                        <span class="cRed">
+                                            <i class="ion-ios-heart cRed fz14em"></i> 喜欢
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 1 end -->
+                            <tr><td colspan="3">&nbsp;</td></tr>
+                            <tr><!-- row 2 begin -->
+                                <td class="text-c">
+                                    <img class="mb5" src="pic/ppl-girl-3-56x56.png">
+                                    <p>方雨燕</p>
+                                </td>
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">Cecilia带你玩游乐场，坐摩天轮</p>
+                                        <p class="cGreen h4 mb5">$ 80</p>
+                                    </a>
+                                    <p class="trip-actions">
+                                        <span class="cRed">
+                                            <i class="ion-ios-heart cRed fz14em"></i> 喜欢
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-5-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-6-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-7-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 2 end -->
+                            <tr><td colspan="3">&nbsp;</td></tr>
+                            <tr><!-- row 3 begin -->
+                                <td class="text-c">
+                                    <img class="mb5" src="pic/ppl-girl-4-56x56.png">
+                                    <p>方雨燕</p>
+                                </td>
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">安娜带你去Stanley Park晨跑，不见不散喔</p>
+                                        <p class="cGreen h4 mb5">$ 120</p>
+                                    </a>
+                                    <p class="trip-actions">
+                                        <span class="cRed">
+                                            <i class="ion-ios-heart cRed fz14em"></i> 喜欢
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-8-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 3 end -->
+                            <tr><td colspan="3">&nbsp;</td></tr>
+                            <tr><!-- row 4 begin -->
+                                <td class="text-c">
+                                    <img class="mb5" src="pic/ppl-girl-5-56x56.png">
+                                    <p>方雨燕</p>
+                                </td>
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">静静带你去印第安峡湾远足</p>
+                                        <p class="cGreen h4 mb5">$ 120</p>
+                                    </a>
+                                    <p class="trip-actions">
+                                        <span class="cRed">
+                                            <i class="ion-ios-heart cRed fz14em"></i> 喜欢
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-5-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-6-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 4 end -->
+                        </tbody>
+                    </table>
+                </div><!-- .form-wish-list end -->
+
+                <div id="form-trip-mgr" class="form tab-content"><!-- .form-trip-mgr begin -->
+                    <h3>旅程管理</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl tbl-trip-list">
+                        <tbody>
+                            <tr><!-- row 1 begin -->
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">青青带你吃法国大厨的私房菜</p>
+                                        <p class="cGreen h4">$ 998</p>
+                                    </a>
+                                    <br>
+                                    <p class="trip-actions">
+                                        <span class="cSilver">
+                                            <i class="ion-edit cSilver fz14em"></i> 编辑
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 1 end -->
+                            <tr><td colspan="3">&nbsp;</td></tr>
+                            <tr><!-- row 2 begin -->
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">青青带你吃法国大厨的私房菜</p>
+                                        <p class="cGreen h4">$ 998</p>
+                                    </a>
+                                    <br>
+                                    <p class="trip-actions">
+                                        <span class="cSilver">
+                                            <i class="ion-edit cSilver fz14em"></i> 编辑
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 2 end -->
+                            <tr><td colspan="3">&nbsp;</td></tr>
+                            <tr><!-- row 3 begin -->
+                                <td class="trip-info">
+                                    <a href="">
+                                        <p class="h4 mb5">青青带你吃法国大厨的私房菜</p>
+                                        <p class="cGreen h4">$ 998</p>
+                                    </a>
+                                    <br>
+                                    <p class="trip-actions">
+                                        <span class="cSilver">
+                                            <i class="ion-edit cSilver fz14em"></i> 编辑
+                                        </span>&nbsp;
+                                        <span class="cSilver">
+                                            <i class="ion-ios-trash cSilver fz14em "></i> 删除
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                                        <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                                    </a>
+                                </td>
+                            </tr><!-- row 3 end -->
+                        </tbody>
+                    </table>
+                </div><!-- .form-trip-list end -->
+
+                <div id="form-order-mgr" class="form tab-content"><!-- .form-trip-mgr begin -->
+                    <h3>预约管理</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl tbl-list">
+                        <tbody>
+                            <tr>
+                                <th>旅程</th>
+                                <th width="80">人数</th>
+                                <th width="120">操作</th>
+                            </tr>
+                            <tr>
+                                <td>Chelsea带你去温哥华海边玩滑板</td>
+                                <td width="100">12</td>
+                                <td width="100">
+                                    <p class="trip-actions cSilver">
+                                        <span class="cGreen"><i class="ion-checkmark fz14em"></i> 接受</span>&nbsp;
+                                        <span><i class="ion-close fz14em"></i> 拒绝</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chelsea带你去温哥华海边玩滑板</td>
+                                <td width="100">12</td>
+                                <td width="100">
+                                    <p class="trip-actions cSilver">
+                                        <span><i class="ion-checkmark fz14em"></i> 接受</span>&nbsp;
+                                        <span class="cRed"><i class="ion-close fz14em"></i> 拒绝</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chelsea带你去温哥华海边玩滑板</td>
+                                <td width="100">12</td>
+                                <td width="100">
+                                    <p class="trip-actions cSilver">
+                                        <span class="cGreen"><i class="ion-checkmark fz14em"></i> 接受</span>&nbsp;
+                                        <span><i class="ion-close fz14em"></i> 拒绝</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chelsea带你去温哥华海边玩滑板</td>
+                                <td width="100">12</td>
+                                <td width="100">
+                                    <p class="trip-actions cSilver">
+                                        <span class="cGreen"><i class="ion-checkmark fz14em"></i> 接受</span>&nbsp;
+                                        <span><i class="ion-close fz14em"></i> 拒绝</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chelsea带你去温哥华海边玩滑板</td>
+                                <td width="100">12</td>
+                                <td width="100">
+                                    <p class="trip-actions cSilver">
+                                        <span><i class="ion-checkmark fz14em"></i> 接受</span>&nbsp;
+                                        <span class="cRed"><i class="ion-close fz14em"></i> 拒绝</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- .form-trip-mgr end -->
+
+                <div id="form-new-trip" class="form tab-content steps"><!-- .form-new-trip begin -->
+                    <h3>发起活动</h3>
+                    <hr class="gutter-h">
+                    <table class="tbl step"><!-- .step-one begin -->
+                        <tbody>
+                            <tr>
+                                <th>行程名</th>
+                                <td><input class="input" type="text" value="NA"></td>
+                            </tr>
+                            <tr>
+                                <th>见面地点</th>
+                                <td><input class="input" type="text" value="NA"></td>
+                            </tr>
+                            <tr>
+                                <th>价格</th>
+                                <td><input class="input" type="text" value="NA"></td>
+                            </tr>
+                            <tr>
+                                <th>行程类型</th>
+                                <td>
+                                    <div class="select">
+                                        <select class="input w-auto">
+                                            <option value="" selected="selected">选择</option>
+                                            <option value="">NA</option>
+                                            <option value="">NA</option>
+                                            <option value="">NA</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>地区</th>
+                                <td>
+                                    <div class="select">
+                                        <select class="input w-auto">
+                                            <option value="" selected="selected">选择</option>
+                                            <option value="">NA</option>
+                                            <option value="">NA</option>
+                                            <option value="">NA</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="va-t">行程简介</th>
+                                <td><textarea class="input" rows="5">NA</textarea></td>
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <td>
+                                    <button class="btn btn-red btn-small btn-next">下一步</button>
+                                    <button class="btn btn-grey-frame btn-small btn-save ml5">保存</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><!-- .step-one end -->
+
+                    <div class="step step-upload-img" style="display: none;"><!-- .step-two begin -->
+                        <h4>1. 封面图</h3>
+                        <p class="mb15 ml15"><i class="ion-help-buoy fz14em cGreen"></i> 显示在首页和banner的图片</p>
+                        <div class="upload-img-large">
+                            <p class="mb10"><b>活动大图</b></p>
+                            <div class="container"><!-- placeholder -->
+                                <div class="help-info">
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p>建议640x360像素以上</p>
+                                </div>
+                                <img src="" alt="" width="435">
+                            </div>
+                        </div>
+
+                        <div class="upload-img-mid fl-l">
+                            <p class="mb10"><b>活动小图</b></p>
+                            <div class="pos-r z-0">
+                                <div class="help-info"><!-- placeholder -->
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p class="small-text">建议310x360像素以上</p>
+                                </div>
+                                <img src="" alt="" width="180">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="gutter-h mt30 mb30">
+
+                        <h4>2. 行程图</h4>
+                        <p class="ml15 mb10">活动介绍图片</p>
+                        <div class="upload-img-small">
+                            <div class="container"><!-- img 1 -->
+                                <div class="help-info">
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p class="small-text">建议310x360<br/>像素以上</p>
+                                </div>
+                                <img class="trip-pic" src="pic/pic-activity-1-310x360.png" alt="" width="120">
+                            </div>
+                            <div class="container"><!-- img 2 -->
+                                <div class="help-info">
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p class="small-text">建议310x360<br/>像素以上</p>
+                                </div>
+                                <img class="trip-pic" src="pic/pic-activity-2-310x360.png" alt="" width="120">
+                            </div>
+                            <div class="container"><!-- img 3 -->
+                                <div class="help-info">
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p class="small-text">建议310x360<br/>像素以上</p>
+                                </div>
+                                <img class="trip-pic" src="pic/pic-activity-3-310x360.png" alt="" width="120">
+                            </div>
+                            <div class="container"><!-- img 4, placeholder -->
+                                <div class="help-info">
+                                    <i class="ion-ios-cloud-upload"></i>
+                                    <p class="small-text">建议310x360<br/>像素以上</p>
+                                </div>
+                                <img class="trip-pic" src="" alt="" width="120">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+                        <hr class="gutter-h mt30 mb30">
+                        <div>
+                            <button class="btn btn-red btn-small btn-next ml15">下一步</button>
+                            <button class="btn btn-grey-frame btn-small btn-save ml5">保存</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div><!-- .step-two end -->
+
+                    <div class="step step-pick-date" style="display: none;"><!-- .step-three begin -->
+                        <table class="tbl step"><!-- .step-one begin -->
+                            <tbody>
+                                <tr>
+                                    <th>活动时间</th>
+                                    <td><input class="input w-auto" type="text" id="datepicker"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="mt15">
+                                            <button class="btn btn-red btn-small btn-next">发布</button>
+                                            <button class="btn btn-grey-frame btn-small btn-save ml5">保存</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- .step-three end -->
+
+                    <div class="step modal modal-note modal-success" style="display: none;"><!-- .modal-success begin -->
+                        <div class="modal-tbl">
+                            <div class="modal-cell">
+                                <div class="modal-content w310">
+                                    <div class="text-c">
+                                        <div class="container">
+                                            <i class="ion-ios-checkmark-outline"></i>
+                                        </div>
+                                        <h3 class="mt20">恭喜!</h3>
+                                        <p>您的活动发布成功！</p>
+                                        <button class="btn btn-green-frame btn-small mt15 mb20 modal-close"><i class="ion-close"></i> 确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .modal-success end -->
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div><!-- main end -->
+            <div class="clearfix"></div>
+
+            <div class="footer"><!-- .footer begin -->
+                <div class="footer-info w960 box-c"><!-- .footer-info begin -->
+                    <img class="pos-a logo" src="img/logo-ytrip-grey-142x32.png" alt="Ytrip logo" width="142" height="32">
+                    <ul class="text-c">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">用户协议</a></li>
+                    </ul>
+                    <p class="text-c small-text cLightGrey">Copyright © 2015 Ytrip - Yidai Media Corporation. All rights reserved.</p>
+                </div><!-- .footer-info end -->
+            </div>
+        </div><!-- main end -->
+    </div><!-- container end -->
+
+    <div class="modal modal-signinup trans-all" style="display: none;">
+        <div class="modal-tbl">
+            <div class="modal-cell">
+
+                <div class="modal-content signin w310" style="display: none;"><!-- .signin begin -->
+                    <!-- social login begin  -->
+                    <a href="" class="btn btn-large btn-wechat mb10">
+                        <img class="icn-wechat" src="img/icn-social-wechat-40x40.png" width="26" height="26" alt="wechat icon">
+                        用微信登入
+                    </a>
+                    <a href="" class="btn btn-large btn-facebook">
+                        <i class="ion-social-facebook"></i>
+                        用Facebook登入
+                    </a>
+                    <!-- social signin end  -->
+                    <hr class="gutter-h"></hr>
+                    <!-- email signin begin -->
+                    <form action="" class="form form-signin pos-r">
+                        <label class="pos-r">
+                            <i class="ion ion-ios-email"></i>
+                            <input class="input mb10" type="text" name="email" placeholder="邮箱">
+                        </label>
+                        <label class="pos-r">
+                            <i class="ion ion-ios-locked"></i>
+                            <input class="input mb5" type="text" name="password" placeholder="密码">
+                        </label>
+                        <label>
+                            <input type="checkbox" name="remember_me" value="true" checked="checked">
+                            <span class="small-text cSilver">记住密码</span>
+                        </label>
+                        <span class="msg-error small-text hide cRed fl-r"><i class="ion-android-alert fz12em"></i> 请输入正确的邮箱或密码</span>
+                        <button class="btn btn-red btn-large w100p mt15">登 录</button>
+                    </form>
+                    <!-- email signin end -->
+                    <hr class="gutter-h"></hr>
+                    <p class="text-c cSilver">还没有账号？<a href="" class="link link-signup">注册</a> | <a href="" class="link">忘记密码</a></p>
+                </div><!-- .signin end -->
+
+                <div class="modal-content signup w310" style="display: none;"><!-- .signup begin -->
+                    <!-- social login begin  -->
+                    <a href="" class="btn btn-large btn-wechat mb10">
+                        <img class="icn-wechat" src="img/icn-social-wechat-40x40.png" width="26" height="26" alt="wechat icon">
+                        用微信注册
+                    </a>
+                    <a href="" class="btn btn-large btn-facebook">
+                        <i class="ion-social-facebook"></i>
+                        用Facebook注册
+                    </a>
+                    <!-- social signin end  -->
+                    <hr class="gutter-h"></hr>
+                    <!-- email signin begin -->
+                    <form action="" class="form form-signin pos-r">
+                        <label class="pos-r">
+                            <i class="ion ion-ios-email"></i>
+                            <input class="input mb10" type="text" name="email" placeholder="邮箱">
+                        </label>
+                        <label class="pos-r">
+                            <i class="ion ion-ios-locked"></i>
+                            <input class="input mb5" type="text" name="password" placeholder="密码">
+                        </label>
+                        <label>
+                            <input type="checkbox" name="remember_me" value="true" checked="checked">
+                            <span class="small-text cSilver">记住密码</span>
+                        </label>
+                        <span class="msg-error small-text hide cRed fl-r"><i class="ion-android-alert fz12em"></i> 请输入正确的邮箱或密码</span>
+                        <button class="btn btn-red btn-large w100p mt15">注 册</button>
+                    </form>
+                    <!-- email signin end -->
+                    <hr class="gutter-h"></hr>
+                    <p class="text-c cSilver">已经有账号？<a href="" class="link link-signin">登录</a></p>
+                </div><!-- .signin end -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+</body>
+</html>
